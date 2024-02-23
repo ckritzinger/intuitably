@@ -42,7 +42,7 @@ And so most people seem to use Dio (or the http package, if they have high pain 
 
 So what does that rant have to do with offline-first architecture? Well, here’s the thing I noticed while building the app:
 
-> Using PowerSync meant that I didn’t have to write ANY state management code.
+Using PowerSync meant that I didn’t have to write ANY state management code.[^1]
 
 Once you’ve configured your PowerSyncDatabase and .connect-ed it, generating reactive UI is as simple as:
 
@@ -91,3 +91,5 @@ It was fairly predictable that as a user, I would really like the way offline-fi
 But as a developer, this feels like a game-changer:  I get incredibly robust data sync with LESS code. I don't need to think about edge cases, race conditions, network failures, and retries. All of that is handled for me, and to be honest, in a much more robust fashion than I would bother implementing myself. Since all local state is in a transactional DB (once again with almost no effort), I get rock-solid state management. With a bit of luck, I’ll never have to care about the difference between a Bloc and a Cubit again.
 
 As mentioned, [here](https://github.com/ckritzinger/gotofun) is a reasonably complete example of how to use PowerSync with Flutter and Rails.
+
+[^1]: It turns out that [I'm not the first](https://news.ycombinator.com/item?id=37494175) to make this observation.  [Or even the second](https://www.powersync.com/blog/how-local-first-simplifies-flutter-state-management)
