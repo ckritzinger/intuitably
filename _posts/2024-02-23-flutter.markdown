@@ -2,10 +2,10 @@
 layout: post
 title:  "The real reason for an offline-first architecture: Developer Experience"
 date:   2024-02-23 13:10:12 +0200
-categories: meta
+categories: epiphanies
 ---
 
-I’ve been curious about PowerSync for a while now, but after seeing it blow up on HackerNews I had to try it. Moreso because it gave me the excuse to start on a side project that has been percolating in the back of my mind. You can see a full repo with my code (mobile and backend) here.
+I’ve been curious about [PowerSync](https://www.powersync.com/) for a while now, but after seeing it [blow up on HackerNews](https://news.ycombinator.com/item?id=38473743) I had to try it. Moreso because it gave me the excuse to start on a side project that has been percolating in the back of my mind. You can see a full repo with my code (mobile and backend) [here](https://github.com/ckritzinger/gotofun).
 
 The hype is true: once you have PowerSync running, it’s pretty darn magical. Run an INSERT or UPDATE and see the data instantly pop up in the front-end of your app.  Even more impressive is how little code you actually need to accomplish that magic.
 
@@ -17,32 +17,33 @@ But there are two aspects of Flutter that grind my gears:
 
 ## State - the final frontier
 
-Flutter state management is an unsolved problem. Or perhaps unsolved is the wrong word: there are plenty of solutions, but none of them are great.  So every Flutter dev I know has gone through a painful learning curve of:
+Flutter state management is an unsolved problem. Or perhaps unsolved is the wrong word: [there are plenty of solutions](https://docs.flutter.dev/data-and-backend/state-mgmt/options), but none of them are great.  So every Flutter dev I know has gone through a painful learning curve of:
 
-- setState and callbacks
+- `setState` and callbacks
 - Spaghetti hell
 - Rewrite in bloc, because that’s what all the cool kids are using
 - Boilerplate hell
 - …
 - More hell
 - …
-- Find some marginally tolerable steady state
+- Find some tolerable steady state
 
-For me, the steady state heavily relies on singletons that are ChangeNotifiers. It’s horrible, inefficient, and probably an indication that I’m a bad programmer. But, it seems to be the least worst solution for most of my use cases.
+For me, the steady state heavily relies on singletons that are `ChangeNotifier`s. It’s horrible, inefficient, and probably an indication that I’m a bad programmer. But, it seems to be the least worst solution for most of my use cases.
 
 ## Hand-rolled API client code
 
-Not for lack of trying, but I’ve never managed to successfully generate a dart REST client from a swagger spec.  Well, technically, I have, but the result was so much worse than my own boilerplate that I just threw it away.
+Not for lack of trying, but I’ve never managed to successfully generate a dart REST client from a swagger spec.  OK, actually I have, but the result was so much worse than my own boilerplate that I just threw it away.
 
 GraphQL support seems to be a bit better, but still a hassle.
 
-And so most people seem to use Dio (or the http package, if they have high pain thresholds) and a lot of boilerplate. Copilot may be great at helping you churn out this boilerplate. However, it's not as good at helping you maintain it. And as for fixing the inevitable, subtle bugs in the boilerplate, well…
+And so most people seem to use Dio (or the http package, if they have high pain thresholds) and a lot of boilerplate. Copilot may be great at helping you churn out this boilerplate. However, it's not nearly as good at helping you maintain it. And as for fixing the inevitable, subtle bugs in the boilerplate, well…
 
 ## Who moved my setState?
 
 So what does that rant have to do with offline-first architecture? Well, here’s the thing I noticed while building the app:
 
-Using PowerSync meant that I didn’t have to write ANY state management code.
+> Using PowerSync meant that I didn’t have to write ANY state management code.
+
 Once you’ve configured your PowerSyncDatabase and .connect-ed it, generating reactive UI is as simple as:
 
 ```dart
@@ -81,10 +82,12 @@ But if (like me) you’re lazy and/or you prefer to write server-side code, you 
    );
 ```
 
-That’s it. That’s all the client-side code you’ll need. Yes, it’s not RESTful <rolls eyes>. But you’re going to have to write server-side marshalling validation and authorisation anyway. So you might as well avoid having to duplicate half of that on the client.
+That’s it. That’s all the client-side code you’ll need. Yes, it’s not RESTful 🤷‍♂️. But you’re going to have to write server-side marshalling validation and authorisation anyway. So you might as well avoid having to duplicate half of that on the client.
 
 ## A surprise, to be sure, but a welcome one
 
 It was fairly predictable that as a user, I would really like the way offline-first apps work. Startup is instant, no waiting for a loading spinner as the app bootstraps initial state from the server. Edits don’t force you to wait as they post back and reload data.  Pull to refresh is a thing of the past.
 
 But as a developer, this feels like a game-changer:  I get incredibly robust data sync with LESS code. I don't need to think about edge cases, race conditions, network failures, and retries. All of that is handled for me, and to be honest, in a much more robust fashion than I would bother implementing myself. Since all local state is in a transactional DB (once again with almost no effort), I get rock-solid state management. With a bit of luck, I’ll never have to care about the difference between a Bloc and a Cubit again.
+
+As mentioned, [here](https://github.com/ckritzinger/gotofun) is a reasonably complete example of how to use PowerSync with Flutter and Rails.
