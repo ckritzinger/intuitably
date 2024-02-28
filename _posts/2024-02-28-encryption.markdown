@@ -5,7 +5,7 @@ date:   2024-02-28 13:10:12 +0200
 categories: epiphanies
 ---
 
-In my early forays into app store submissions, I found myself clicking through the same "Provide Export Comliance" questions every time I uploaded a new build.
+In my early forays into app store submissions, I found myself clicking through the same "Provide Export Compliance" questions every time I uploaded a new build.
 
 According to Apple:
 
@@ -19,3 +19,5 @@ There's a two-line fix. Add the following to your `Info.plist`:
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 ```
+
+Go forth and toil a little bit less.
