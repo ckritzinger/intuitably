@@ -13,16 +13,16 @@ This time, I had a very hard deadline. I had promised the Powersync team that I 
 
 The process then went like this:
 
-1. Identify the platform to use (Jekyll) by googling "best static site generator 2024" and going with the recommendation of a random Hacker News commenter that "if you like ruby, use Jekyll". Also, the name is familiar, and I have actually used it before back in the distant past.
+1. Identify the platform to use (Jekyll) by googling "best static site generator 2024" and going with the recommendation of a random Hacker News commenter that "[if you like ruby, use Jekyll](https://news.ycombinator.com/item?id=20797170)". Also, the name is familiar, and I have actually used it before back in the distant past.
 2. ~~Find a template~~ Fuckit, just use the Jekyll default, spend 10 minutes figuring out how to edit the basic layour to get rid of cruft I don't want.
 3. Host it on the easiest platform I can find. Achieved this by running `jekyll new` and trying to deploy the result.  Github pages failed, because it had issues with the newer Jekyll versions and didn't serve the assets correctly. Vercel failed in some obscure way, and I didn't have time to debug it.  Netlify worked first time.
 
 Suddenly, I had a blog after about 90 minutes. I could spend another half hour tweaking the first post and still make my self-imposed cutoff.
 
-And wierdly, I'm now blogging o_O - let's see if it sticks.  But the complete absence of freedom, and the fact that my blog kinda sucks, so I don't feel too pained about putting up sub-standard content is incredibly liberating.
+And wierdly, I'm now blogging o_O - let's see if it sticks.  But the complete absence of freedom, and the fact that [my blog kinda sucks](https://kadavy.net/blog/posts/permission-to-suck/), so I don't feel too pained about putting up sub-standard content is incredibly liberating.
 
-My only self-indulgence has been to spend 20 minutes crafting a bash script that generates a new post template for me. Why Jekyll doesn't do this out of the box is really a mystery.
+My only self-indulgence has been to spend 20 minutes crafting [a bash script that generates a new post](https://github.com/ckritzinger/intuitably/blob/master/new_post.sh) for me. Why Jekyll doesn't do this out of the box is really a mystery.
 
-Why did this work so well? The most plausible explanation is that I'm just lazy and have no grit.
+Why did this work so well? Maybe because I'm lazy and have no grit.
 
-The other plausible explanation is that the constraints themselves made it possible.  I'm about 2/3rds of the way through "A Beautiful Constraint", and they make a compelling case that constraints can be a source of creativity and innovation.  Their reframing of constraints of "I can do $GOAL if $SHORTCUT" is a powerful one. In my case "I can get a blog up if I don't care what it looks like and I just take the easiest possible approach" worked like a charm.
+The other plausible explanation is that the constraints themselves made it feasible.  I'm about 2/3rds of the way through [A Beautiful Constraint](https://www.amazon.com/Beautiful-Constraint-Transform-Limitations-Advantages/dp/B08DG8DK9Q), and they make a compelling case that constraints can be a source of creativity and innovation.  Their reframing of constraints of "I can do $GOAL if $SHORTCUT" is a powerful one. In my case "I can get a blog up if I don't care what it looks like and I just take the easiest possible approach" worked like a charm.
