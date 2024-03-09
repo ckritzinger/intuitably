@@ -7,7 +7,7 @@ categories: notes
 
 Recently, I went on a [10-day Vipassana course](https://pataka.dhamma.africa/course-information/). My reasons for going we re complex and out of scope for this post. Likewise, the personal outcomes and the details of the journey are for another time and post.  This post is really just to focus on some of the more mundane and practical aspects of the course, because there were a few things that I wish I had known or thought about before going.
 
-# Don't panic
+## Don't panic
 
 As it got closer to the start of the course, I found myself worrying about it quite a lot. This was entirely unnecessary. Yes, the course isn't easy and it's not something to be taken too lightly, but there is no way to "fail" at it, other than to decide to quit.  So although it's going to be challenging, there is absolutely nothing that's going to prevent you from completing the course, unless you decide to stop.
 
@@ -30,7 +30,7 @@ When I looked at the schedule beforehand, I worried a bit about the early mornin
 ### Exercise
 I've had a number of people say they could not go so long without exercise. And this was one of my biggest concerns too - I'm deeply dependent on exercise to manage my stress and overall mood.  Turns out this was a lot less of an issue than I thought it would be: when I have no stress and spend most of my day in quiet contemplation then the need to go out and sweat is massively reduced.  You're also going to walk a lot more than you think you will - it's a few hundred meters from the meditation hall to your room, and a few more hundred meters from your room to the dining hall and you will make these trips multiple times per day. I generally took roundabout routes, and sometimes walked a few laps and this seemed to be more than enough exercise to sustain me.  In fact, it felt as though I had not even lost much fitness at the end of the 10 days.
 
-# But Be Prepared
+## But Be Prepared
 
 Although you don't need to panic, there seem to be a few things that you can do to get more out of the experience, and make it a more pleasant experience overall.
 
@@ -40,10 +40,14 @@ I'd been meditating on and off for some time before going on the course, and I t
 ### Sit
 Sitting for 10 hours a day is unusual and anything you can do to help your body prepare will be useful. Obviously, if you're meditating already then you're also sitting and helping your body to prepare. But either way, working on finding a comfortable position, understanding what cushions or props you need to get comfortable and getting used to sitting up straight but relaxed will definitely help.
 
+### Stretch and roll
+
+It's useful to get rid of as many aches and pains as you can before you start. I didn't, but what saved me was doing three sessions a day of about 20 minutes each of stretching, rolling and self-massage during the course.
+
 ### Make a list
 I had a lot of things that I needed to wrap up and put in place before going, and I found it really useful to make a list and tick everything off. Once I got to the course, knowing that I had ticked off everything on my list was definitely comforting - otherwise I would have probably spent considerably energy either worrying about what I might have forgotten or forcing myself not to worry.
 
-# Some things to take
+## Some things to take
 In addition to what was on the packing list, I was either glad I had packed, or wished I had packed the following:
 
 - Anything you need to sit on. I took along my old memory-foam cushion and it was a life-saver. There are lots of cushions available, and you can even sit on a chair if you need to, but it can take some time to find the right thing, so doing it before you're there is helpful.
@@ -59,7 +63,7 @@ In addition to what was on the packing list, I was either glad I had packed, or 
 - Broad-brim hat / sunscreen / umbrella. You're going to be outside and in the sun or rain quite a lot so one of these is going to be a life saver (depending on the weather).
 - Spare flip-flops.  My flip-flops broke on the last day. Luckily I was able to repair them well enough to get through the last day, but if I had not and this had happened early on, it would have been a real pain in the ... feet.  Personally, I would not want to wear closed shoes - you're going to be putting them on and taking them off about 10 times a day.
 
-# At the Course
+## At the Course
 
 ### Stretch and roll
 
@@ -67,14 +71,11 @@ I mentioned this earlier, but I think it's worth repeating. I spent 20 minutes s
 
 ### Appreciate the place
 
-The courses are generally held in beautiful, peaceful places, certainly the Worcester venue where I was, was spectacular. I found it really helpful to take time to appreciate the surroundings every day. I think it helped me to relax and be happy and to appreciate the opportunity that I had to be there. Some people say that this is a distraction from the meditation.
+The courses are generally held in beautiful, peaceful places, certainly the Worcester venue where I was, was spectacular. I found it really helpful to take time to appreciate the surroundings every day. I think it helped me to relax and be happy and to appreciate the opportunity that I had to be there. Some people say that this is a distraction from the meditation, you'll have to make up your own mind about that.
 
-# Other Notes
+## Other Notes
 
 - I had a pretty bad dopamine withdrawal on the 2nd day.  Or at least that's how I can best explain the restlessness and anxiety I experienced on that day - a sense that I should be doing something or that there was something I needed to attend to.  My list helped a lot for this. Once I realised that the feeling was very likely because I had gone 2 days without my usual dopamine triggers (email, social media, etc), it was easier to manage. Apparently many people have a hard time around day 4 or 5, I didn't have this as much.
 - Some days were easy, some days were quite tough. On these days I found it best to adopt a "just keep swimming" approach - taking things one meditation at a time. At one point I had to tell myself that "if you get through the next meditation and still want to quit, you can". Got through the next meditation, didn't want to quit any more.
 - Your car is going to be standing in the sun for 10 days. Take a sunshade and think about disconnecting the battery if you can. And don't leave anything in the car that you don't want to be slow-cooked.
-
-# Conclusion
-
-This was one of the most interesting and meaningful experiences in my life. I'm quite sorry that I didn't do it sooner, and I have a strong determination to go again as life allows.  I hope that this post is helpful to someone who is considering going on a course.  If you have any questions, feel free to drop me a mail. I'll do my best to help.
+- This was one of the most interesting and meaningful experiences in my life. I'm quite sorry that I didn't do it sooner, and I have a strong determination to go again as life allows.  I hope that this post is helpful to someone who is considering going on a course.  If you have any questions, feel free to drop me a mail. I'll do my best to help.
