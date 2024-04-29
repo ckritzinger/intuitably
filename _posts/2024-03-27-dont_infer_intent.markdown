@@ -21,4 +21,12 @@ So a typical interaction looks a bit like this:
 
 My reaction to your action is based on my own construction, rather than what you actually meant.  And the world is a worse place.
 
-Luckily, this pattern is easy to break.  Just be curious.  Ask “what did you mean when you said that?” or “why did you do that?” and listen carefully to the answer.
+There are some heuristics that I find useful to alleviate this issue:
+
+The first is from a former manager, who was fond of saying "MRI - most respectful interpretation". Accept that what you observe is ambiguous and consciously choose the meaning that puts the other person in the best possible light.
+
+The second is from [one of my favourite film scenes of all time](https://www.youtube.com/watch?v=3S16b-x5mRA): As the man with the moustache points out, **be curious, not judgemental**.  Ask “what did you mean when you said that?” or “why did you do that?” and listen carefully to the answer.
+
+And finally, [choose discomfort over resentment](https://www.tiktok.com/@motivationstop19/video/7214070475914431790?lang=en). Now I know the context of the video was slightly different, but bear with me.  When someone says something that you don't like, it's often easy to just brush over it and walk away resentful. Instead, front-load your pain and ask or tell them: "hey, when you said that thing, it made me cranky, what gives?".
+
+Also: Shut the fuck up and listen. You have one mouth and two ears for good reason.
