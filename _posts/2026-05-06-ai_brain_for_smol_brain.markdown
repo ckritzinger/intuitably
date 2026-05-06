@@ -18,7 +18,7 @@ Don't aim to make it perfect, just get something in place, and have a plan for m
 So if you want to set up an AI second brain, here is the smol brain approach that worked for me:
 
 1. set up Claude code (or use Cowork or whatever floats your boat)
-2. install Obsidian and create a vault (or whatever note taker you like really - as long as it uses  some sort of structured files that your AI can read)
+2. install [Obsidian](https://obsidian.md/) and create a vault (or whatever note taker you like really - as long as it uses  some sort of structured files that your AI can read)
 3. `cd vault && claude`
 4. Tell claude you're setting up this vault to function as a second brain and tell it to ask you what it needs to ask. It will make up some fairly sensible baseline folder structures. If it doesn't, who cares, you can fix it later.
 5. Now, whenever you want to do something - tell claude. drop files in, paste in email/chat logs, whatever - the AI tends to be pretty good at ingesting and structuring data. Your folders start getting populated.
@@ -27,4 +27,7 @@ So if you want to set up an AI second brain, here is the smol brain approach tha
 
 *Big brain wants to create perfect setup upfront. Smol brain knows: just start and improve later.*
 
-Bonus points: Use git to back up your notes incrementally. Obsidian has a very nice git plugin
+Two standout useful additions:
+
+- Git: Use git to back up your notes incrementally. Obsidian has a very nice git plugin. Takes 1 minute to set up. One day I might have to care about multi-device sync - that day is not today
+- Inbox: I have a dedicated inbox folder that I dump stuff into (meeting transcripts, emails, random thoughts in md files), and a shortcut (/ingest) that just takes everything in the inbox and sorts/categorises it, then moves it to an archive. Inbox linked as a shortcut in finder to make dumping stuff there easier, and a terminal alias (`mv $1 ~/notes/inbox/`) It was quite trivial to create this skill with a prompt and it saves a lot of toil
