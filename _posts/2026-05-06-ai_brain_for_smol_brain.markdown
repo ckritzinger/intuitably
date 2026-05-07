@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "AI Brain for human with smol brain"
+title:  "Robot help for smol brain"
 date:   2026-05-06 09:44:58 +0200
 categories:
 ---
