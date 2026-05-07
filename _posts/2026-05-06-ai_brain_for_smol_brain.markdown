@@ -23,7 +23,7 @@ So if you want to set up an AI second brain, here is the smol brain approach tha
 2. install [Obsidian](https://obsidian.md/) and create a vault (or whatever note taker you like really - as long as it uses  some sort of structured files that your AI can read)
 3. Run Claude Code inside your obsidian vault
 
-Congratulations, you now have an AI second brain. Everything from here on is just incremental improvement.
+**Congratulations, you now have an AI second brain. Everything from here on is just incremental improvement.**
 
 Some starting points:
 
