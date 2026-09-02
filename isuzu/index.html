@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Isuzu KB300 LX 2004 - R120,000</title>
+<style>
+  :root {
+    --border: #d8d8d8;
+    --bg: #f5f5f5;
+    --text: #222;
+    --muted: #666;
+    --accent: #1a6b3c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+    padding: 4px;
+    background: #eee;
+  }
+  .photo {
+    aspect-ratio: 4 / 3;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+  }
+  .header {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  h1 {
+    margin: 0 0 4px;
+    font-size: 24px;
+  }
+  .price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-top: 8px;
+  }
+  .subtitle {
+    color: var(--muted);
+    font-size: 15px;
+  }
+  .specs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .spec-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .spec-label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--muted);
+  }
+  .spec-value {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .description {
+    padding: 20px;
+    border-bottom: 1px solid var(--border);
+    line-height: 1.6;
+  }
+  .description h2 {
+    font-size: 16px;
+    margin-top: 0;
+  }
+  .highlights {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .highlights li {
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 6px;
+  }
+  .highlights li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact h2 {
+    font-size: 16px;
+    margin: 0 0 4px;
+  }
+  .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid transparent;
+  }
+  .btn-whatsapp {
+    background: #25d366;
+    color: #fff;
+  }
+  .btn-phone {
+    background: var(--accent);
+    color: #fff;
+  }
+  .btn-email {
+    background: #fff;
+    color: var(--text);
+    border-color: var(--border);
+  }
+  .disclaimer {
+    padding: 16px 20px 24px;
+    color: var(--muted);
+    font-size: 12px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .wrap { padding: 0; }
+    .card { border-radius: 0; border-left: none; border-right: none; }
+    .gallery { grid-template-columns: repeat(2, 1fr); }
+    .header { padding: 16px; }
+    h1 { font-size: 20px; }
+    .price { font-size: 24px; }
+    .specs { grid-template-columns: 1fr; padding: 16px; }
+    .description, .contact { padding: 16px; }
+    .btn { font-size: 16px; padding: 16px; }
+  }
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+  }
+  .lightbox.open {
+    display: flex;
+  }
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 32px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 8px;
+  }
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    color: #fff;
+    font-size: 28px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .lightbox-prev { left: 12px; }
+  .lightbox-next { right: 12px; }
+  .lightbox-counter {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  @media (max-width: 480px) {
+    .lightbox-nav { width: 40px; height: 40px; font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <div class="gallery" id="gallery">
+      <img class="photo" src="photos/photo-01.jpg" alt="Isuzu KB300 LX photo 1" loading="lazy" onclick="openLightbox(0)">
+      <img class="photo" src="photos/photo-02.jpg" alt="Isuzu KB300 LX photo 2" loading="lazy" onclick="openLightbox(1)">
+      <img class="photo" src="photos/photo-03.jpg" alt="Isuzu KB300 LX photo 3" loading="lazy" onclick="openLightbox(2)">
+      <img class="photo" src="photos/photo-04.jpg" alt="Isuzu KB300 LX photo 4" loading="lazy" onclick="openLightbox(3)">
+      <img class="photo" src="photos/photo-05.jpg" alt="Isuzu KB300 LX photo 5" loading="lazy" onclick="openLightbox(4)">
+      <img class="photo" src="photos/photo-06.jpg" alt="Isuzu KB300 LX photo 6" loading="lazy" onclick="openLightbox(5)">
+      <img class="photo" src="photos/photo-07.jpg" alt="Isuzu KB300 LX photo 7" loading="lazy" onclick="openLightbox(6)">
+      <img class="photo" src="photos/photo-08.jpg" alt="Isuzu KB300 LX photo 8" loading="lazy" onclick="openLightbox(7)">
+    </div>
+
+    <div class="header">
+      <h1>Isuzu KB300 LX 2004</h1>
+      <div class="subtitle">342,000 km &middot; Double Cab Bakkie</div>
+      <div class="price">R120,000</div>
+    </div>
+
+    <div class="specs">
+      <div class="spec-item">
+        <span class="spec-label">Make</span>
+        <span class="spec-value">Isuzu</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">Model</span>
+        <span class="spec-value">KB300 LX</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">Year</span>
+        <span class="spec-value">2004</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">Mileage</span>
+        <span class="spec-value">342,000 km</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">Service History</span>
+        <span class="spec-value">Full</span>
+      </div>
+      <div class="spec-item">
+        <span class="spec-label">Accident History</span>
+        <span class="spec-value">None</span>
+      </div>
+    </div>
+
+    <div class="description">
+      <h2>Description</h2>
+      <p>Isuzu's 3.0L diesel is one of the most trusted bakkie engines on SA roads &mdash; built to run well past 400,000km when it's looked after, which is exactly what this one has had. This KB300 has never worked a day of commercial duty: it's been a family vehicle doing school runs and holiday trips, diligently serviced throughout. Runs perfectly with no major mechanical issues, ever. Some minor cosmetic wear on the bodywork and upholstery from age and family use, but mechanically it's a diesel workhorse with plenty of life left.</p>
+      <ul class="highlights">
+        <li>Full service history</li>
+        <li>No accidents or major damage</li>
+        <li>Diligently serviced and well looked after</li>
+        <li>Engine and drivetrain running perfectly</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>Contact seller</h2>
+      <a class="btn btn-whatsapp" href="https://wa.me/27835648926?text=Hi%2C%20I%27m%20interested%20in%20the%20Isuzu%20KB300%20LX%202004%20for%20R120%2C000">
+        WhatsApp
+      </a>
+      <a class="btn btn-phone" href="tel:+27835648926">
+        Call +27 83 564 8926
+      </a>
+      <a class="btn btn-email" href="mailto:ckritzinger+isuzu@gmail.com?subject=Isuzu%20KB300%20LX%202004%20-%20R120%2C000">
+        Email
+      </a>
+    </div>
+
+    <div class="disclaimer">
+      Sold as-is. Price negotiable. Serious enquiries only.
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)" aria-label="Previous">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)" aria-label="Next">&#8250;</button>
+  <div class="lightbox-counter" id="lightbox-counter"></div>
+</div>
+
+<script>
+  var photos = [
+    "photos/photo-01.jpg",
+    "photos/photo-02.jpg",
+    "photos/photo-03.jpg",
+    "photos/photo-04.jpg",
+    "photos/photo-05.jpg",
+    "photos/photo-06.jpg",
+    "photos/photo-07.jpg",
+    "photos/photo-08.jpg"
+  ];
+  var currentIndex = 0;
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightbox-img");
+  var lightboxCounter = document.getElementById("lightbox-counter");
+
+  function showPhoto(index) {
+    currentIndex = (index + photos.length) % photos.length;
+    lightboxImg.src = photos[currentIndex];
+    lightboxCounter.textContent = (currentIndex + 1) + " / " + photos.length;
+  }
+
+  function openLightbox(index) {
+    showPhoto(index);
+    lightbox.classList.add("open");
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("open");
+  }
+
+  function navLightbox(delta) {
+    showPhoto(currentIndex + delta);
+  }
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (!lightbox.classList.contains("open")) return;
+    if (e.key === "Escape") closeLightbox();
+    if (e.key === "ArrowLeft") navLightbox(-1);
+    if (e.key === "ArrowRight") navLightbox(1);
+  });
+</script>
+</body>
+</html>
