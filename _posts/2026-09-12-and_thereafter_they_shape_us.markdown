@@ -7,13 +7,13 @@ categories:
 
 "What percentage of code did you actually write for this?"
 
-The question rattled me. I'd spent a chunk of my weekend building a thing that had been in my head for a while - a local-first time tracker and billing platform. I was quite pleased with the outcome, had a couple of collaborators already and even a couple of users.
+The question rattled me. I'd spent a chunk of my weekend building a thing that had been in my head for a while - a [local-first time tracker and billing platform](https://ckritzinger.github.io/focus_on/). I was rather pleased with the outcome, had a couple of collaborators already and even a couple of users.
 
-Still, the question (unintentionally) made me wonder whether I had any reason to be pleased. Especially when paired with [some strong words from Stroustrup](https://x.com/haider1/status/2056487493084799059?s=20) questioning the value of AI-written code.
+Still, the question (unintentionally) made me wonder whether I had real reason to be pleased. Especially when paired with [some strong words from Stroustrup](https://x.com/haider1/status/2056487493084799059?s=20) questioning the value of AI-written code.
 
-The code was never the hard part. Within a few weeks you can teach an 11-year old to write working code.  By the second month, most interns can start building features on a mid-sized project. From there it's several (many?) years of hard work to achieve a degree of mastery. What happens in those years?
+The code was never the hard part. Within a few weeks you can teach an 11-year old to write working code.  By the second month, most interns can start building features on a mid-sized project. From there it's several (many?) years of hard work to achieve any degree of mastery. What happens in those years?
 
-And here, I think Stroustrup is giving us a clue. After all, the guy built C++. And C++ is instructive because although it's a high-level language, you can't use it well if you don't understand the layers underneath the source code (assembler) as well as the layers above the source code (design).  And if someone wrote a program in C++, would it make sense to ask them how much of the byte code they had written?
+And here, I think Stroustrup is giving us a clue. After all, the guy built C++. Firstly, C++ is a high-level language, but you can't use it well if you don't understand the layers underneath the source code (assembler) as well as the layers above the source code (design). Secondly: if someone wrote a program in C++, would it make sense to ask them how much of the byte code they had written?
 
 AI, unlike a compiler, allows you to outsource your understanding. My choice of word here is important. Allows. Not requires. Allows.  So talking about "AI coding" as a category is really conflating two very different ways of using the tool.
 
