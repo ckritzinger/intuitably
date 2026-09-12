@@ -7,7 +7,7 @@ categories:
 
 "What percentage of code did you actually write for this?"
 
-The question rattled me. I'd spent a chunk of my weekend building a thing that had been in my head for a while - a [local-first time tracker and billing platform](https://ckritzinger.github.io/focus_on/). I was rather pleased with the outcome, had a couple of collaborators already and even a couple of users.
+The question rattled me. I'd spent a chunk of my weekend building a thing that had been in my head for a while - a [local-first time tracker and billing platform](https://ckritzinger.github.io/focus_on/). I was rather pleased with the outcome, had a couple of collaborators already and even a user or two.
 
 Still, the question (unintentionally) made me wonder whether I had real reason to be pleased. Especially when paired with [some strong words from Stroustrup](https://x.com/haider1/status/2056487493084799059?s=20) questioning the value of AI-written code.
 
