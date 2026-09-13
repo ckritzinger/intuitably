@@ -11,7 +11,7 @@ The question rattled me. I'd spent a chunk of my weekend building a thing that h
 
 Still, the question (unintentionally) made me wonder whether I had real reason to be pleased. Especially when paired with [some strong words from Stroustrup](https://x.com/haider1/status/2056487493084799059?s=20) questioning the value of AI-written code.
 
-The code was never the hard part. Within a few weeks you can teach an 11-year old to write working code.  By the second month, most interns can start building features on a mid-sized project. From there it's several (many?) years of hard work to achieve any degree of mastery. What happens in those years?
+But was typing out the code ever the hard part? Within a few weeks you can teach an 11-year old to write working code.  By the second month, most interns can start building features on a mid-sized project. From there it's several (many?) years of hard work to achieve any degree of mastery. What happens in those years?
 
 And here, I think Stroustrup is giving us a clue. After all, the guy built C++. Firstly, C++ is a high-level language, but you can't use it well if you don't understand the layers underneath the source code (assembler) as well as the layers above the source code (design). Secondly: if someone wrote a program in C++, would it make sense to ask them how much of the byte code they had written?
 
