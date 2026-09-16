@@ -8,15 +8,25 @@ Things I have built or am in the process of building, roughly in reverse chronol
 
 ---
 
+### X Blitz
+
+An arcade-style game for my son to help him learn times tables. Show an `x × y` problem and a 3x3 grid of answers. Added some gamification to make it more fun.
+
+[https://github.com/ckritzinger/x-blitz](https://github.com/ckritzinger/x-blitz)
+
+---
+
+### Haha Host
+
+A single Go CLI for publishing local HTML files to private, optionally password-protected links - built so Claude (or I) can turn a report or writeup into a shareable page without reaching for a full hosting setup. Backed by S3 + CloudFront, single-operator, deliberately minimal - no accounts, no analytics, no expiry.
+
+[https://github.com/ckritzinger/hahahost](https://github.com/ckritzinger/hahahost)
+
+---
+
 ### FocusOn
 
-I wanted a super simple task tracker that would do three things:
-
- - let me track what I had worked on locally without cloud services and other cruft
- - play nicely with my Obsidian and Claude code setup
- - continually but subtly remind me to stay on track
-
- This is just a simple little widget that let's you specify what you're working on and then just floats there, in view, continually reminding you what you decided. Outputs a CSV file that is easy to parse and review.
+Started as a super simple task tracker: no cloud, no cruft, just a little widget that floats above your windows showing what you're meant to be working on. It's grown into a local-first time-tracking and invoicing tool. The widget logs your sessions, and a companion CLI (`focuson`) turns that logged time into client invoices with rates, PDF generation, and double-billing prevention, all backed by plain CSV/TOML files in a git repo you control.
 
 [https://github.com/ckritzinger/focus_on](https://github.com/ckritzinger/focus_on)
 
