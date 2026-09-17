@@ -6,13 +6,31 @@ permalink: /projects/
 
 Things I have built or am in the process of building, roughly in reverse chronological order.
 
+I've also been building a little series of games for my kids (and their friends) to drill specific school skills - see the [Edugames](/edugames/) page for the full rundown.
+
+---
+
+### Word Spotter
+
+Remy was starting to get the hang of nouns, verbs and adjectives, so Pia asked if a game could exist to help her practice - read a word, digest it, categorise it. Same arcade drill format as X Blitz: a word appears, tap the right part of speech before the countdown bar runs out, streaks multiply your score. Settings (gear icon) let you tune which categories are in play and how long the timer runs, so it scales from "just learning nouns" to "throw everything at me."
+
+[https://ckritzinger.github.io/word-spotter/](https://ckritzinger.github.io/word-spotter/) · [https://github.com/ckritzinger/word-spotter](https://github.com/ckritzinger/word-spotter)
+
+---
+
+### Wordie
+
+A blatant Wordle ripoff, adapted to make it easy for younger kids. Tap letters instead of typing, a few are pre-filled to give a head start, and once you've found a letter it stays locked in on every future guess. Confetti on every good tile.
+
+[https://ckritzinger.github.io/wordie/](https://ckritzinger.github.io/wordie/) · [https://github.com/ckritzinger/wordie](https://github.com/ckritzinger/wordie)
+
 ---
 
 ### X Blitz
 
 An arcade-style game for my son to help him learn times tables. Show an `x × y` problem and a 3x3 grid of answers. Added some gamification to make it more fun.
 
-[https://github.com/ckritzinger/x-blitz](https://github.com/ckritzinger/x-blitz)
+[https://ckritzinger.github.io/x-blitz/](https://ckritzinger.github.io/x-blitz/) · [https://github.com/ckritzinger/x-blitz](https://github.com/ckritzinger/x-blitz)
 
 ---
 

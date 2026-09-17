@@ -32,6 +32,7 @@ theme: minima
 header_pages:
   - index.markdown
   - projects.markdown
+  - edugames.markdown
   - about.markdown
 plugins:
   - jekyll-feed
