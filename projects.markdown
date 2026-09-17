@@ -12,7 +12,7 @@ I've also been building a little series of games for my kids (and their friends)
 
 ### Word Spotter
 
-Remy was starting to get the hang of nouns, verbs and adjectives, so Pia asked if a game could exist to help her practice - read a word, digest it, categorise it. Same arcade drill format as X Blitz: a word appears, tap the right part of speech before the countdown bar runs out, streaks multiply your score. Settings (gear icon) let you tune which categories are in play and how long the timer runs, so it scales from "just learning nouns" to "throw everything at me."
+A child I know was starting to get the hang of nouns, verbs and adjectives, so his mom asked if a game could exist to help him practice - read a word, digest it, categorise it. Same arcade drill format as X Blitz: a word appears, tap the right part of speech before the countdown bar runs out, streaks multiply your score. Settings (gear icon) let you tune which categories are in play and how long the timer runs, so it scales from "just learning nouns" to "throw everything at me."
 
 [https://ckritzinger.github.io/word-spotter/](https://ckritzinger.github.io/word-spotter/) · [https://github.com/ckritzinger/word-spotter](https://github.com/ckritzinger/word-spotter)
 
