@@ -12,7 +12,7 @@ Small, free, single-page games built to help my kids (and now some of their frie
 
 My son was drilling times tables the boring way, so I built an arcade version: an `x × y` problem shows up, a 3x3 grid of possible answers appears, and a countdown bar decays faster the longer you take. The wrong answers aren't random - most are "near-miss" mistakes (one factor off by ±1), so the game is actually testing the facts you're shaky on rather than just your reaction time.
 
-[Play The Game](https://ckritzinger.github.io/x-blitz/) · [Source Code](https://github.com/ckritzinger/x-blitz)
+[Play The Game](https://ckritzinger.github.io/x-blitz/) ·  ·  ·  ·  ·  ·  · [Source Code](https://github.com/ckritzinger/x-blitz)
 
 ---
 
@@ -20,7 +20,7 @@ My son was drilling times tables the boring way, so I built an arcade version: a
 
 A blatant Wordle riff, adapted for kids aged 6-8. Guess a 4-letter word, but instead of typing, tap letters from a picker - no keyboard sitting on the board. A few letters are pre-filled and locked in to give younger kids a head start, and any letter you find stays locked in on every future guess, so you're never re-entering something you already know. Some visuals to make it a little more dopamine-rich.
 
-[Play the Game](https://ckritzinger.github.io/wordie/) · [Source Code](https://github.com/ckritzinger/wordie)
+[Play the Game](https://ckritzinger.github.io/wordie/) ·  ·  ·  ·  ·  ·  · [Source Code](https://github.com/ckritzinger/wordie)
 
 ---
 
@@ -28,7 +28,7 @@ A blatant Wordle riff, adapted for kids aged 6-8. Guess a 4-letter word, but ins
 
 The idea for this one came from my friend: her son was starting to grasp the difference between nouns, verbs and adjectives, and she wondered if a game like X Blitz could exist for that: read a word, digest it, categorise it. Same arcade drill format where a word appears and you must tap the right part of speech before the countdown bar runs out. Settings (gear icon, top right) let you tune which categories are active and how long the timer runs, so it scales from "just Noun/Verb/Adjective" up to the full set - adverbs, pronouns, prepositions, and beyond.
 
-[Play the Game](https://ckritzinger.github.io/word-spotter/) · [Source Code](https://github.com/ckritzinger/word-spotter)
+[Play the Game](https://ckritzinger.github.io/word-spotter/) ·  ·  ·  ·  ·  ·  · [Source Code](https://github.com/ckritzinger/word-spotter)
 
 ---
 
