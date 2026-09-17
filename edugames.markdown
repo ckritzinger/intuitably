@@ -32,4 +32,6 @@ The idea for this one came from my friend: her son was starting to grasp the dif
 
 ---
 
+Got an idea for a game you'd like to see? [Get in touch](mailto:humans@intuitably.com).
+
 More on the way, probably - see the [Projects](/projects/) page for everything else.
