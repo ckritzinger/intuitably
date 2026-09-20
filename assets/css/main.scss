@@ -1,0 +1,23 @@
+---
+---
+
+@import "type-on-strap";
+
+// Post titles in the post list (blog.liquid) are marked up as h1, which
+// is full page-title size. It's a list of teasers, not a page title - h3 size.
+.post-teaser h1 {
+  font-size: 1.5em;
+}
+
+// Theme hides the "|" between nav items by default (opacity: 0 on desktop,
+// display: none on mobile) - show them.
+.site-header .separator {
+  opacity: 1;
+  padding: 0 0.4em;
+}
+
+@media screen and (max-width: $break) {
+  nav .separator {
+    display: inline !important;
+  }
+}

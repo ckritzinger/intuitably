@@ -1,0 +1,3 @@
+# Extra nav links, merged with site.pages by _includes/default/navbar.liquid.
+# Empty on purpose - overrides the theme's own menu.yml (fetched as part of
+# remote_theme), which otherwise adds a "Type on Strap" credit link.

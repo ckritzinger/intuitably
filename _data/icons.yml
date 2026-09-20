@@ -1,0 +1,3 @@
+# Overrides the theme's own icons.yml (fetched as part of remote_theme),
+# which defaults "github" to the theme author's own account.
+github: ckritzinger

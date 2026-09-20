@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<article>
+    <header id="main">
+        <div class="title-padder">
+            <h1 class="title">{{ page.list_title | default: page.title }}</h1>
+        </div>
+    </header>
+    <section class="post-content">
+        {{ content }}
+    </section>
+</article>
+<div class="home">
+    {% capture _blog %}{% include blog/blog.liquid %}{% endcapture %}
+    {{ _blog | split: " " | join: " "}}
+</div>

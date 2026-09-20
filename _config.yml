@@ -18,24 +18,34 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Thoughts, Rants and Epiphanies.
+title: Rants and Epiphanies.
 email: humans@intuitably.com
 description: >- # this means to ignore newlines until "baseurl:"
   thoughts and rants.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+color_theme: light
+footer_text: '<a href="mailto:humans@intuitably.com">Get in touch</a>.'
 # twitter_username: jekyllrb
 # github_username:  jekyll
 
 # Build settings
-theme: minima
-header_pages:
-  - index.markdown
-  - projects.markdown
-  - edugames.markdown
-  - about.markdown
+# remote_theme (not `theme:`) because GitHub Pages' build is still on the
+# legacy pipeline (locked Jekyll 3.10 + a fixed gem allowlist that doesn't
+# include type-on-strap) - remote_theme fetches straight from GitHub and is
+# on that allowlist. Requires the jekyll-remote-theme plugin below.
+remote_theme: sylhare/Type-on-Strap
+sass:
+  quiet_deps: true # type-on-strap's own scss (and its Font Awesome dep) use old @import/lighten() syntax; not ours to fix
+  silence_deprecations: [import] # assets/css/main.scss (root stylesheet) also uses @import
+post_navigation: true
+paginate: 1000 # effectively unpaginated - few enough posts that a second page just adds friction
+paginate_path: "blog/page:num"
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.

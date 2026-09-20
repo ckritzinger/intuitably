@@ -1,0 +1,18 @@
+# Overrides the theme's own social.yml (fetched as part of remote_theme),
+# which enables share buttons on every post by default.
+
+rss: true # Icon on the footer
+feed:
+  path: feed.xml
+
+# Share buttons at the bottom of each post - off, don't want them
+share:
+  email: false
+  facebook: false
+  linkedin: false
+  pinterest: false
+  pocket: false
+  reddit: false
+  tumblr: false
+  twitter: false
+  wordpress: false

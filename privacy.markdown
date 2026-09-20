@@ -2,6 +2,7 @@
 layout:
 title: Privacy Policy
 permalink: /privacy/
+hide: true
 ---
 
 **Effective Date: 1 January 2024**

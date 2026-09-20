@@ -2,19 +2,20 @@
 layout: page
 title: Projects
 permalink: /projects/
+position: 2
 ---
 
-Things I have built or am in the process of building, roughly in reverse chronological order.
+Things I have built or am in the process of building
 
-I've also been building a little series of games for my kids (and their friends) to drill specific school skills - see the [Edugames](/edugames/) page for the full rundown.
+(approximately in reverse chronological order)
 
 ---
 
 ### Word Spotter
 
-A child I know was starting to get the hang of nouns, verbs and adjectives, so his mom asked if a game could exist to help him practice - read a word, digest it, categorise it. Same arcade drill format as X Blitz: a word appears, tap the right part of speech before the countdown bar runs out, streaks multiply your score. Settings (gear icon) let you tune which categories are in play and how long the timer runs, so it scales from "just learning nouns" to "throw everything at me."
+A child I know was starting to get the hang of nouns, verbs and adjectives, so his mom asked if a game could exist to help him practice. I reused the x-blitz framework and just replaced the question format.
 
-[https://ckritzinger.github.io/word-spotter/](https://ckritzinger.github.io/word-spotter/) · [https://github.com/ckritzinger/word-spotter](https://github.com/ckritzinger/word-spotter)
+[Play the Game](https://ckritzinger.github.io/word-spotter/)  &nbsp; \| &nbsp; [See the Source Code](https://github.com/ckritzinger/word-spotter)
 
 ---
 
@@ -22,7 +23,7 @@ A child I know was starting to get the hang of nouns, verbs and adjectives, so h
 
 A blatant Wordle ripoff, adapted to make it easy for younger kids. Tap letters instead of typing, a few are pre-filled to give a head start, and once you've found a letter it stays locked in on every future guess. Confetti on every good tile.
 
-[https://ckritzinger.github.io/wordie/](https://ckritzinger.github.io/wordie/) · [https://github.com/ckritzinger/wordie](https://github.com/ckritzinger/wordie)
+[Play the Game](https://ckritzinger.github.io/wordie/) &nbsp; \| &nbsp; [See the Source Code](https://github.com/ckritzinger/wordie)
 
 ---
 
@@ -30,7 +31,7 @@ A blatant Wordle ripoff, adapted to make it easy for younger kids. Tap letters i
 
 An arcade-style game for my son to help him learn times tables. Show an `x × y` problem and a 3x3 grid of answers. Added some gamification to make it more fun.
 
-[https://ckritzinger.github.io/x-blitz/](https://ckritzinger.github.io/x-blitz/) · [https://github.com/ckritzinger/x-blitz](https://github.com/ckritzinger/x-blitz)
+[Play The Game](https://ckritzinger.github.io/x-blitz/) &nbsp; \| &nbsp; [See the Source Code](https://github.com/ckritzinger/x-blitz)
 
 ---
 
