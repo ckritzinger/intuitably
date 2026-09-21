@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Games I Built For My Kids</title>
+<meta name="description" content="Three free browser games for times tables, spelling, and grammar. No login, no ads, no accounts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0b0d;
+    --panel-top:#1b1b1f;
+    --panel-bot:#131315;
+    --line:#2c2c31;
+    --ink:#f4efe4;
+    --ink-dim:#b3afa6;
+    --ink-faint:#918d84;
+    --amber:#ffb020;
+    --green:#35e07a;
+    --red:#ff4d3d;
+  }
+
+  *{box-sizing:border-box}
+
+  html{background:var(--bg)}
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Work Sans', system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+  }
+
+  ::selection{background:var(--amber);color:#100c00}
+
+  ::-webkit-scrollbar{width:12px}
+  ::-webkit-scrollbar-track{background:var(--bg)}
+  ::-webkit-scrollbar-thumb{background:var(--line);border:3px solid var(--bg);border-radius:8px}
+  html{scrollbar-color:var(--line) var(--bg)}
+
+  a{color:inherit}
+
+  :focus-visible{
+    outline:2px solid var(--amber);
+    outline-offset:3px;
+    border-radius:2px;
+  }
+
+  /* ---------- marquee header ---------- */
+
+  header.marquee{
+    position:relative;
+    padding:4.5rem 1.5rem 3.5rem;
+    text-align:center;
+    background:
+      radial-gradient(ellipse 60% 90% at 50% 0%, rgba(255,176,32,0.10), transparent 70%),
+      var(--bg);
+    border-bottom:1px solid var(--line);
+    overflow:hidden;
+  }
+
+  .bulb-row{
+    display:flex;
+    justify-content:center;
+    gap:clamp(6px, 2vw, 16px);
+    margin-bottom:2.25rem;
+  }
+
+  .bulb{
+    width:6px;
+    height:6px;
+    border-radius:50%;
+    background:var(--ink-faint);
+    box-shadow:0 0 0 rgba(255,176,32,0);
+    animation:twinkle 3.2s ease-in-out infinite;
+    animation-delay:calc(var(--i) * 0.18s);
+  }
+
+  @keyframes twinkle{
+    0%, 100%{ background:var(--ink-faint); box-shadow:0 0 0 rgba(255,176,32,0); }
+    50%{ background:var(--amber); box-shadow:0 0 8px 2px rgba(255,176,32,0.65); }
+  }
+
+  h1.marquee-title{
+    margin:0 auto;
+    max-width:22ch;
+    font-family:'Bungee', system-ui, sans-serif;
+    font-weight:400;
+    font-size:clamp(1.9rem, 5.6vw, 4rem);
+    line-height:1.12;
+    letter-spacing:0.01em;
+    color:var(--ink);
+    text-shadow:
+      0 0 2px rgba(244,239,228,0.9),
+      0 0 18px rgba(255,176,32,0.55),
+      0 0 46px rgba(255,176,32,0.28);
+    animation:flicker 1.6s steps(1, end) 1;
+  }
+
+  @keyframes flicker{
+    0%{ opacity:0.2; text-shadow:none; }
+    6%{ opacity:1; text-shadow:none; }
+    9%{ opacity:0.3; text-shadow:none; }
+    14%{ opacity:1; text-shadow:0 0 2px rgba(244,239,228,0.9), 0 0 18px rgba(255,176,32,0.55), 0 0 46px rgba(255,176,32,0.28); }
+    24%{ opacity:0.35; text-shadow:none; }
+    29%{ opacity:1; text-shadow:0 0 2px rgba(244,239,228,0.9), 0 0 18px rgba(255,176,32,0.55), 0 0 46px rgba(255,176,32,0.28); }
+    100%{ opacity:1; text-shadow:0 0 2px rgba(244,239,228,0.9), 0 0 18px rgba(255,176,32,0.55), 0 0 46px rgba(255,176,32,0.28); }
+  }
+
+  p.marquee-sub{
+    margin:1.4rem auto 0;
+    max-width:38ch;
+    font-family:'Work Sans', sans-serif;
+    font-size:1.05rem;
+    color:var(--ink-dim);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .bulb, h1.marquee-title{ animation:none; }
+    .bulb{ background:var(--amber); box-shadow:0 0 8px 2px rgba(255,176,32,0.5); }
+    h1.marquee-title{ opacity:1; text-shadow:0 0 2px rgba(244,239,228,0.9), 0 0 18px rgba(255,176,32,0.55), 0 0 46px rgba(255,176,32,0.28); }
+  }
+
+  /* ---------- cabinet row ---------- */
+
+  main{
+    max-width:1180px;
+    margin:0 auto;
+    padding:3.5rem 1.5rem 4rem;
+  }
+
+  .arcade{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:2rem;
+    align-items:stretch;
+  }
+
+  @media (max-width: 880px){
+    .arcade{ grid-template-columns:1fr; gap:2.5rem; }
+  }
+
+  .cabinet{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    background:linear-gradient(180deg, var(--panel-top), var(--panel-bot));
+    border:1px solid var(--line);
+    border-radius:6px;
+    overflow:hidden;
+  }
+
+  .rivet{
+    position:absolute;
+    width:7px;
+    height:7px;
+    border-radius:50%;
+    background:radial-gradient(circle at 35% 30%, #4a4a50, #101012 75%);
+    box-shadow:0 0 0 1px rgba(0,0,0,0.6);
+  }
+  .rivet.tl{top:9px; left:9px}
+  .rivet.tr{top:9px; right:9px}
+  .rivet.bl{bottom:9px; left:9px}
+  .rivet.br{bottom:9px; right:9px}
+
+  .cabinet__marquee{
+    position:relative;
+    padding:1.5rem 1.6rem 1.15rem;
+    text-align:center;
+    border-bottom:1px solid var(--line);
+  }
+
+  .cabinet__marquee::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-1px;
+    transform:translateX(-50%);
+    width:46%;
+    height:2px;
+    background:var(--accent);
+  }
+
+  .cabinet--amber{ --accent:var(--amber); }
+  .cabinet--green{ --accent:var(--green); }
+  .cabinet--red{ --accent:var(--red); }
+
+  .cabinet__marquee h2{
+    margin:0;
+    font-family:'Bungee', system-ui, sans-serif;
+    font-weight:400;
+    font-size:1.5rem;
+    letter-spacing:0.01em;
+    color:var(--accent);
+    text-shadow:0 0 14px color-mix(in srgb, var(--accent) 55%, transparent);
+  }
+
+  .cabinet__wire{
+    position:absolute;
+    top:100%;
+    left:14px;
+    width:1px;
+    height:1.9rem;
+    background:var(--line);
+  }
+  .cabinet__wire::before, .cabinet__wire::after{
+    content:"";
+    position:absolute;
+    left:-2px;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:var(--accent);
+  }
+  .cabinet__wire::before{ top:-2.5px }
+  .cabinet__wire::after{ bottom:-2.5px }
+
+  .cabinet__body{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    padding:2.1rem 1.6rem 1.6rem;
+  }
+
+  .cabinet__screen{
+    position:relative;
+    aspect-ratio:390/312;
+    border-radius:4px;
+    overflow:hidden;
+    background:#000;
+    margin-bottom:1.35rem;
+    box-shadow:inset 0 0 0 1px var(--line), inset 0 1px 4px rgba(0,0,0,0.6);
+  }
+  .cabinet__screen img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+  }
+  .cabinet__screen img.frame-2{
+    opacity:0;
+    animation:screen-crossfade 9s ease-in-out infinite;
+  }
+  @keyframes screen-crossfade{
+    0%, 40%{ opacity:0; }
+    55%, 85%{ opacity:1; }
+    100%{ opacity:0; }
+  }
+  @media (prefers-reduced-motion: reduce){
+    .cabinet__screen img.frame-2{ animation:none; opacity:0; }
+  }
+
+  .cabinet__body p{
+    margin:0 0 1.5rem;
+    font-size:0.98rem;
+    line-height:1.6;
+    color:var(--ink-dim);
+    max-width:42ch;
+  }
+
+  .cabinet__plate{
+    margin-top:auto;
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:0.85rem 1rem;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:0.9rem;
+    background:rgba(0,0,0,0.22);
+  }
+
+  .plate-field dt{
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    font-size:0.72rem;
+    letter-spacing:0.12em;
+    color:var(--ink-faint);
+    margin:0 0 0.3rem;
+  }
+  .plate-field dd{
+    margin:0;
+    font-family:'Oswald', sans-serif;
+    font-weight:500;
+    font-size:0.82rem;
+    letter-spacing:0.01em;
+    color:var(--ink);
+  }
+
+  .cabinet__actions{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    margin-top:1.5rem;
+  }
+
+  .play-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:0.5rem;
+    padding:0.72rem 1.3rem;
+    background:var(--accent);
+    color:#0c0a05;
+    font-family:'Oswald', sans-serif;
+    font-weight:600;
+    font-size:0.86rem;
+    letter-spacing:0.08em;
+    text-decoration:none;
+    border-radius:3px;
+    box-shadow:0 3px 10px -3px rgba(0,0,0,0.55), 0 0 13px -5px color-mix(in srgb, var(--accent) 70%, transparent);
+    transition:box-shadow 0.25s ease, transform 0.25s ease;
+  }
+  .play-btn:hover, .play-btn:focus-visible{
+    box-shadow:0 3px 10px -3px rgba(0,0,0,0.55), 0 0 24px -4px color-mix(in srgb, var(--accent) 90%, transparent);
+    transform:translateY(-1px);
+  }
+  .play-btn svg{ width:11px; height:11px; flex:none; }
+
+  .code-link{
+    font-family:'Work Sans', monospace, monospace;
+    font-size:0.78rem;
+    color:var(--ink-faint);
+    text-decoration:none;
+    border-bottom:1px solid transparent;
+    white-space:nowrap;
+  }
+  .code-link:hover, .code-link:focus-visible{
+    color:var(--ink-dim);
+    border-bottom-color:var(--ink-faint);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .play-btn{ transition:none; }
+  }
+
+  /* ---------- footer ---------- */
+
+  footer{
+    padding:2.5rem 1.5rem 3rem;
+    text-align:center;
+    border-top:1px solid var(--line);
+  }
+  footer p{
+    margin:0;
+    font-size:0.82rem;
+    color:var(--ink-faint);
+  }
+</style>
+</head>
+<body>
+
+<header class="marquee">
+  <div class="bulb-row" aria-hidden="true">
+    <span class="bulb" style="--i:0"></span><span class="bulb" style="--i:1"></span>
+    <span class="bulb" style="--i:2"></span><span class="bulb" style="--i:3"></span>
+    <span class="bulb" style="--i:4"></span><span class="bulb" style="--i:5"></span>
+    <span class="bulb" style="--i:6"></span><span class="bulb" style="--i:7"></span>
+    <span class="bulb" style="--i:8"></span>
+  </div>
+  <h1 class="marquee-title">Free games for times tables, spelling, and grammar</h1>
+  <p class="marquee-sub">Three browser games, no login, no ads, no accounts to set up. I built them for my own kids, who play-tested every one. Now your kid can too.</p>
+</header>
+
+<main>
+  <div class="arcade">
+
+    <article class="cabinet cabinet--amber">
+      <span class="rivet tl"></span><span class="rivet tr"></span>
+      <span class="rivet bl"></span><span class="rivet br"></span>
+      <div class="cabinet__marquee">
+        <h2>Word Spotter</h2>
+        <span class="cabinet__wire" aria-hidden="true"></span>
+      </div>
+      <div class="cabinet__body">
+        <div class="cabinet__screen">
+          <img src="img/word-spotter-1.png" alt="Word Spotter mid-game: the word &quot;curious&quot;, with Noun, Verb, and Adjective to choose from." loading="lazy">
+          <img class="frame-2" src="img/word-spotter-2.png" alt="Word Spotter mid-game: the word &quot;noisy&quot;, with the same three choices." loading="lazy">
+        </div>
+        <p>Nouns, verbs, adjectives. One word, three choices, twenty rounds to get faster at telling them apart. A friend's son was just getting the hang of parts of speech, and his mom asked for a game to help him practice. This is what she got.</p>
+        <dl class="cabinet__plate">
+          <div class="plate-field">
+            <dt>Subject</dt>
+            <dd>Nouns &middot; verbs &middot; adjectives</dd>
+          </div>
+          <div class="plate-field">
+            <dt>How to play</dt>
+            <dd>Spot the right part of speech</dd>
+          </div>
+        </dl>
+        <div class="cabinet__actions">
+          <a class="play-btn" href="https://ckritzinger.github.io/word-spotter/">
+            <svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M1 0.5v11l10-5.5z"/></svg>
+            Play
+          </a>
+          <a class="code-link" href="https://github.com/ckritzinger/word-spotter">view source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="cabinet cabinet--green">
+      <span class="rivet tl"></span><span class="rivet tr"></span>
+      <span class="rivet bl"></span><span class="rivet br"></span>
+      <div class="cabinet__marquee">
+        <h2>Wordie</h2>
+        <span class="cabinet__wire" aria-hidden="true"></span>
+      </div>
+      <div class="cabinet__body">
+        <div class="cabinet__screen">
+          <img src="img/wordie-1.png" alt="Wordie mid-guess: four letter tiles, one filled in, six tries remaining." loading="lazy">
+          <img class="frame-2" src="img/wordie-2.png" alt="Wordie after a correct guess: TEAR spelled out, confetti falling." loading="lazy">
+        </div>
+        <p>Spelling practice, in the shape of a Wordle ripoff built easier for younger kids. Six tries a word. Some letters come pre-filled, so there's already a foothold. Tap instead of type, and once you've found a letter, it locks in for every guess after. Confetti on every good tile.</p>
+        <dl class="cabinet__plate">
+          <div class="plate-field">
+            <dt>Subject</dt>
+            <dd>Spelling</dd>
+          </div>
+          <div class="plate-field">
+            <dt>How to play</dt>
+            <dd>Tap letters, found ones lock in</dd>
+          </div>
+        </dl>
+        <div class="cabinet__actions">
+          <a class="play-btn" href="https://ckritzinger.github.io/wordie/">
+            <svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M1 0.5v11l10-5.5z"/></svg>
+            Play
+          </a>
+          <a class="code-link" href="https://github.com/ckritzinger/wordie">view source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="cabinet cabinet--red">
+      <span class="rivet tl"></span><span class="rivet tr"></span>
+      <span class="rivet bl"></span><span class="rivet br"></span>
+      <div class="cabinet__marquee">
+        <h2>X Blitz</h2>
+        <span class="cabinet__wire" aria-hidden="true"></span>
+      </div>
+      <div class="cabinet__body">
+        <div class="cabinet__screen">
+          <img src="img/x-blitz-1.png" alt="X Blitz mid-game: 7 x 10, with nine possible answers in a 3 by 3 grid." loading="lazy">
+          <img class="frame-2" src="img/x-blitz-2.png" alt="X Blitz mid-game: 5 x 7, same nine-answer grid, round two of twenty." loading="lazy">
+        </div>
+        <p>Times tables, arcade style. One problem, nine possible answers in a 3&times;3 grid, twenty rounds to a game. My son needed the practice. This is what he got.</p>
+        <dl class="cabinet__plate">
+          <div class="plate-field">
+            <dt>Subject</dt>
+            <dd>Times tables</dd>
+          </div>
+          <div class="plate-field">
+            <dt>How to play</dt>
+            <dd>Pick the answer from a 3&times;3 grid</dd>
+          </div>
+        </dl>
+        <div class="cabinet__actions">
+          <a class="play-btn" href="https://ckritzinger.github.io/x-blitz/">
+            <svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M1 0.5v11l10-5.5z"/></svg>
+            Play
+          </a>
+          <a class="code-link" href="https://github.com/ckritzinger/x-blitz">view source</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <p>Built by Carl Kritzinger</p>
+</footer>
+
+</body>
+</html>
