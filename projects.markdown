@@ -11,6 +11,14 @@ Things I have built or am in the process of building
 
 ---
 
+### Letters
+
+A phonics game for my youngest, who's five and just starting on letter sounds - too young for the others. An animal emoji with its name missing the first letter, four letters to pick from. Says the animal name out loud, cheers when you get it right. Part of [the kids' games collection](/edugames/).
+
+[Play the Game](https://ckritzinger.github.io/letters/) &nbsp; \| &nbsp; [See the Source Code](https://github.com/ckritzinger/letters)
+
+---
+
 ### Word Spotter
 
 A child I know was starting to get the hang of nouns, verbs and adjectives, so his mom asked if a game could exist to help him practice. I reused the x-blitz framework and just replaced the question format.

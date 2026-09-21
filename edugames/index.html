@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Games I Built For My Kids</title>
-<meta name="description" content="Three free browser games for times tables, spelling, and grammar. No login, no ads, no accounts.">
+<meta name="description" content="Four free browser games for times tables, spelling, grammar, and phonics. No login, no ads, no accounts.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Oswald:wght@500;600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
@@ -20,6 +20,7 @@
     --amber:#ffb020;
     --green:#35e07a;
     --red:#ff4d3d;
+    --blue:#3fa9f5;
   }
 
   *{box-sizing:border-box}
@@ -188,6 +189,7 @@
   .cabinet--amber{ --accent:var(--amber); }
   .cabinet--green{ --accent:var(--green); }
   .cabinet--red{ --accent:var(--red); }
+  .cabinet--blue{ --accent:var(--blue); }
 
   .cabinet__marquee h2{
     margin:0;
@@ -369,8 +371,8 @@
     <span class="bulb" style="--i:6"></span><span class="bulb" style="--i:7"></span>
     <span class="bulb" style="--i:8"></span>
   </div>
-  <h1 class="marquee-title">Free games for times tables, spelling, and grammar</h1>
-  <p class="marquee-sub">Three browser games, no login, no ads, no accounts to set up. I built them for my own kids, who play-tested every one. Now your kid can too.</p>
+  <h1 class="marquee-title">Free games for times tables, spelling, grammar, and phonics</h1>
+  <p class="marquee-sub">Four browser games, no login, no ads, no accounts to set up. I built them for my own kids, who play-tested every one. Now your kid can too.</p>
 </header>
 
 <main>
@@ -471,6 +473,39 @@
             Play
           </a>
           <a class="code-link" href="https://github.com/ckritzinger/x-blitz">view source</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="cabinet cabinet--blue">
+      <span class="rivet tl"></span><span class="rivet tr"></span>
+      <span class="rivet bl"></span><span class="rivet br"></span>
+      <div class="cabinet__marquee">
+        <h2>Letters</h2>
+        <span class="cabinet__wire" aria-hidden="true"></span>
+      </div>
+      <div class="cabinet__body">
+        <div class="cabinet__screen">
+          <img src="img/letters-1.png" alt="Letters mid-game: a bear emoji, the word &quot;_ear&quot;, and four letter buttons to choose from." loading="lazy">
+          <img class="frame-2" src="img/letters-2.png" alt="Letters after a correct guess: &quot;bear&quot; spelled out, confetti falling." loading="lazy">
+        </div>
+        <p>My youngest is five and just starting on letter sounds, so the other games were still out of reach. An emoji, its name missing the first letter, four buttons to pick from. Says the animal out loud, cheers when you get it right.</p>
+        <dl class="cabinet__plate">
+          <div class="plate-field">
+            <dt>Subject</dt>
+            <dd>Phonics &middot; letter sounds</dd>
+          </div>
+          <div class="plate-field">
+            <dt>How to play</dt>
+            <dd>Pick the missing first letter</dd>
+          </div>
+        </dl>
+        <div class="cabinet__actions">
+          <a class="play-btn" href="https://ckritzinger.github.io/letters/">
+            <svg viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M1 0.5v11l10-5.5z"/></svg>
+            Play
+          </a>
+          <a class="code-link" href="https://github.com/ckritzinger/letters">view source</a>
         </div>
       </div>
     </article>
