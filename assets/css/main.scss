@@ -21,3 +21,18 @@
     display: inline !important;
   }
 }
+
+// Theme default draws a drop-shadow behind every page/post title, which
+// reads as a decorative "sticker" effect - too playful for a resume/portfolio
+// a recruiter is scanning. Flatten it.
+h1.title,
+.subtitle {
+  text-shadow: none;
+}
+
+// Theme treats every standalone page (Writing, Projects, Resume, Caveat
+// Emptor) as if it were a blog post with a big hero title, leaving a wide
+// dead gap between the title and the actual content. Tighten it.
+article header {
+  margin-bottom: 2.5%;
+}
