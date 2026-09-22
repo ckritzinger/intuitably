@@ -11,6 +11,14 @@ Things I have built or am in the process of building
 
 ---
 
+### + Blitz
+
+Same framework as X Blitz, adapted for addition and tuned for a younger kid: small numbers to start, more time per round, and wrong guesses don't end the round so she can keep trying. Part of [the kids' games collection](/edugames/).
+
+[Play the Game](https://ckritzinger.github.io/summer/) &nbsp; \| &nbsp; [See the Source Code](https://github.com/ckritzinger/summer)
+
+---
+
 ### Letters
 
 A phonics game for my youngest, who's five and just starting on letter sounds - too young for the others. An animal emoji with its name missing the first letter, four letters to pick from. Says the animal name out loud, cheers when you get it right. Part of [the kids' games collection](/edugames/).
