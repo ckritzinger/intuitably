@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Everything is Theory Building"
+title:  "Everything is theory building"
 date:   2026-05-26 09:53:55 +0200
 categories:
 ---

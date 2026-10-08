@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Mind is a Wild Elephant"
+title:  "The mind is a wild elephant"
 date:   2024-03-09 13:18:39 +0200
 categories: notes
 ---

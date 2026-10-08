@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Constraints in an Age of Abundance"
+title:  "Constraints in an age of abundance"
 date:   2026-09-22 16:06:57 +0200
 categories:
 ---
