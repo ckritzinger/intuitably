@@ -27,7 +27,7 @@ This was the quote that made the penny drop:
 
 [Thank you, Charity Majors 🙇‍♂️](https://charity.wtf/p/advice-for-engineering-managers-who-want-to-climb-the-ladder)
 
-And that was the thing. Engineering directorship wasn't a new, higher altitude. It was a weird place in the middle that I'd never seen before. And in this uncanny valley almost none of the skills that I'd spent years learning would transfer directly.
+And that was the thing. Engineering directorship wasn't a new, higher altitude. It wasn't a slightly more complex version of being a team lead. It was a weird place in the middle that I'd never seen before. And in this uncanny valley almost none of the skills that I'd spent years learning would transfer directly.
 
 So here's the thing about that uncanny valley that's crystal clear in hindsight: Directorship isn't about the people directly anymore. Directorship isn't about the craft any more. Directorship is about thinking about teams as your basic unit of work, and doing systems engineering around that. As a director, you should be thinking about your teams, how they mesh with the rest of the organisation, and how they fit into the business objectives that you need to meet in your domain. Everything else is secondary. You need to be focused intensely on that optimisation, following the org processes rather than trying to modify them, and constantly looking for opportunities for collaboration.
 
